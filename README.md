@@ -93,11 +93,11 @@ This example uses a few of the more complex features available.
 Other Stuff
 --------
 
-  Based On:: Scott Barron aasm for ruby
-  Author::  Chandra Patni
-  License:: Original code Copyright 2011 by Chandra Patni.
-          Released under an MIT-style license.  See the LICENSE  file
-          included in the distribution.
+    Based On:: Scott Barron aasm for ruby
+    Author::  Chandra Patni
+    License:: Original code Copyright 2011 by Chandra Patni.
+            Released under an MIT-style license.  See the LICENSE  file
+            included in the distribution.
 
 Warranty
 --------
