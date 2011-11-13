@@ -1,4 +1,4 @@
 task :default => 'test'
 task :test do
-  exec("cake test")
+  exec("./node_modules/coffee-script/bin/cake test")
 end
