@@ -49,7 +49,6 @@ module.exports = class AASM
   #Prototype methods
   PrototypeMethods =
     aasmCurrentState: () ->
-      # console.log("...._aasm_current_state", @_aasm_current_state)
       return @_aasmCurrentState if @_aasmCurrentState
       if @aasmReadState?
         @_aasmCurrentState = @aasmReadState()
@@ -60,9 +59,7 @@ module.exports = class AASM
       stateName = @aasmDetermineStateName(@constructor.aasmInitialState())
       state = @aasmStateObjectForState(stateName)
 
-      # console.log("state_name-------------befirecall_action>",state.constructor.name)
       state.callAction('beforeEnter', this)
-      #console.log("state_name-------------call_action>",state.constructor.name)
       state.callAction('enter', this)
       @_aasmCurrentState = stateName
       state.callAction('afterEnter', this)
@@ -100,7 +97,6 @@ module.exports = class AASM
           throw {name: "NotImplementedError", message: "Unrecognized state-type given.  Expected String, or Function."}
 
     aasmStateObjectForState: (name)->
-      #TODO filter == find?
       obj = @constructor.aasmStates().filter (s) -> s.name is name
       throw {name: "UndefinedState", message: "State :#{name} doesn't exist"} unless obj
       obj[0]
