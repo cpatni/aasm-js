@@ -1,7 +1,7 @@
 # AASM.js
 
-[aasm.js]( http://github.com/rubyorchard/aasm-js) is a node.js framework to build state machines. It provides
-a DSL to mixin finite state machines behavior to CoffeeScript classes.
+[aasm.js]( http://github.com/cpatni/aasm-js) is a node.js framework to build state machines. It provides
+a DSL to mixin finite state machines behavior to CoffeeScript classes. 
 
 #### AASM has the following features:
 
@@ -100,7 +100,7 @@ class Relationship
 ### Other Stuff
 --------
 
- * Based On:: Scott Barron aasm for ruby
+ * Based On:: Scott Barron aasm for ruby. I wrote this to learn coffeescript originally.
  * Author::  Chandra Patni
  * License:: Original code Copyright 2011 by Chandra Patni.
              Released under an MIT-style license.  See the LICENSE  file
